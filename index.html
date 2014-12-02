@@ -7,6 +7,8 @@
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://gilbitron.github.io/Ideal-Image-Slider/public/bower_components/ideal-image-slider/ideal-image-slider.css">
+	<link rel="stylesheet" href="http://gilbitron.github.io/Ideal-Image-Slider/public/bower_components/ideal-image-slider/themes/default/default.css">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -25,7 +27,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse1">
           
-          <ul class="nav navbar-nav navbar-right" style="font-size:11px;">
+          <ul class="nav navbar-nav navbar-right" style="font-size:10px;">
              <li><a href="#" target="_ext">FREQUENTLY ASKED QUESTIONS</a></li>
              <li><a href="#" target="_ext">CONTACT US</a></li>
              <li><a href="#" target="_ext">SIGN UP</a></li>
@@ -75,6 +77,12 @@
 
 <!--main-->
 <div class="container" id="main">
+<div id="slider">
+				<img src="images/1.jpg" data-src-2x="images/1@2x.jpg" alt="Slide 1">
+				<img data-src="images/2.jpg" data-src-2x="images/2@2x.jpg" src="" alt="Slide 2">
+				<img data-src="images/3.jpg" data-src-2x="images/3@2x.jpg" src="" alt="Slide 3">	
+			</div>
+			</br>
    <div class="row">
    <div class="col-md-4 col-sm-6">
    
@@ -191,13 +199,53 @@ Each state and territory offers its own unique set of incentives for business in
 
 
 	<!-- script references -->
+	
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="http://gilbitron.github.io/Ideal-Image-Slider/public/bower_components/ideal-image-slider/ideal-image-slider.min.js"></script>
+<script>
+var slider = new IdealImageSlider.Slider({
+	selector: '#slider',
+	height: 400
+});
+slider.start();
+</script>
   		<script src="http://newsignature.github.io/us-map/js/libs/raphael.js"></script>
  		<script src="http://newsignature.github.io/us-map/js/libs/jquery.usmap.js"></script>
  		<script>$('#map').usmap({
-  // The click action
+ 	'stateStyles': {
+        fill: "#ADD8E6",
+        stroke: "#99B2FF",
+        "stroke-width": 1,
+        "stroke-linejoin": "round",
+        scale: [1, 1]
+      },
+      'stateHoverStyles': {
+        fill: "#6495ED",
+        stroke: "#99B2FF",
+        scale: [1.1, 1.1]
+      },
+      'labelBackingStyles': {
+        fill: "#ADD8E6",
+        stroke: "#99B2FF",
+        "stroke-width": 1,
+        "stroke-linejoin": "round",
+        scale: [1, 1]
+      },
+      
+      // The styles for the hover
+      'labelBackingHoverStyles': {
+        fill: "#6495ED",
+        stroke: "#99B2FF",
+      },
+      'labelTextStyles': {
+      fill: "#222",
+        'stroke': 'none',
+        'font-weight': 300,
+        'stroke-width': 0,
+        'font-size': '10px'
+      },
   click: function(event, data) {
     $('#clicked-state')
       .text('You clicked: '+data.name)
