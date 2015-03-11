@@ -5,9 +5,18 @@
 		<script src="js/scripts.js"></script>
 		<script src="http://gilbitron.github.io/Ideal-Image-Slider/public/bower_components/ideal-image-slider/ideal-image-slider.min.js"></script>
 <script>
+    $(function() {
+        $(".dropdown").hover(
+            function(){ $(this).addClass('open') },
+            function(){ $(this).removeClass('open') }
+        );
+    });
+</script>
+<script>
 var slider = new IdealImageSlider.Slider({
 	selector: '#slider',
-	height: 400
+	effect: 'fade',
+	height: 350
 });
 slider.start();
 </script>
