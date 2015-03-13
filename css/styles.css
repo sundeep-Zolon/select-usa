@@ -9,10 +9,10 @@ license: MIT
 author: bootply.com
 */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body {
   -webkit-font-smoothing: antialiased;
-  font-family:Arial,Verdana,sans-serif;
+ font-family: 'Open Sans', sans-serif;
   color:#4A4A4A;
   background: #F1F1F1;
 }
