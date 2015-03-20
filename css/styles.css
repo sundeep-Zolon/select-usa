@@ -26,7 +26,7 @@ body {
 .btn,.form-control,.panel,.list-group,.well {border-radius:1px;box-shadow:0 0 0;}
 .form-control {border-color:#d7d7d7;}
 .btn-primary {border-color:transparent;}
-.btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {background-color:#4285f4;}
+.btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {background-color:#A5A5A5;}
 .btn-plus {background-color:#ffffff;border-width:1px;border-color:#dddddd;box-shadow:1px 1px 0 #999999;border-radius:3px;color:#666666;text-shadow:0 0 1px #bbbbbb;}
 .well,.panel {  background: #FDFDFD;border: 1px solid #E0E0E0;}
 .btn-success,.label-success,.progress-bar-success{background-color:#65b045;}
@@ -120,6 +120,12 @@ padding: 2px;
 text-decoration: underline;
 }
 
+.input-group {
+width:300px;
+}
+
+
+
 @media (max-width: 768px) {
  #subnav {
   padding-top: 6px;
@@ -131,15 +137,23 @@ text-decoration: underline;
  #foot {
 margin-top:-75px;
 padding-left:0;
-margin-left:-30px;
+margin-left:-25px;
 }
 .navbar-custom .navbar-nav > li > a {
 line-height:1;
 }
 
+.input-group {
+width:100%;
+}
+
 .dropdown-menu>li>a { 
 color: #fff;
 }
+
+.navbar-brand {
+padding-left:25px;
+padding-right:25px;
 }
 
 }

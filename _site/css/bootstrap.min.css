@@ -3702,6 +3702,7 @@ tbody.collapse.in {
 .input-group {
     position:relative;
     display:table;
+    margin-right:-13px;
     border-collapse:separate
 }
 

@@ -19,6 +19,4 @@
    
        
   	
-    <br>
-    
-    <div class="clearfix"></div>
+   {% include footer %}

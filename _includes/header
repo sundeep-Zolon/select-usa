@@ -5,7 +5,7 @@
           <a href="{{ site.baseurl }}{{ post.url }}/" class="navbar-brand"><img src="images/logo.png" ></a>
           
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse1" style="background:transparent;padding:0;">
+        <div class="collapse navbar-collapse" id="navbar-collapse1" style="background:transparent;padding:0;margin-bottom:-40px;">
         
           <ul class="nav navbar-nav navbar-right">
              <li><a href="{{ site.baseurl }}{{ post.url }}/frequently-asked-questions.html" title="Faqs" style="font-size:10px;color:#282828">FREQUENTLY ASKED QUESTIONS</a></li>
@@ -15,8 +15,8 @@
            </ul>
         </div>	
         <form class="navbar-form pull-right">
-              <div class="input-group" style="max-width:470px;">
-                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+              <div class="input-group">
+                <input type="text" class="form-control" name="srch-term" id="srch-term">
                 <div class="input-group-btn">
                   <button class="btn btn-default btn-primary" type="submit" >SEARCH</button>
                 </div>
