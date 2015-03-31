@@ -1,17 +1,14 @@
-# ----------------------- #
-#      Main Configs       #
-# ----------------------- #
-
-url: http://internationaltradeadministration.github.io/select-usa/
-title: SelectUSA
-description: > # "Write an awesome description for your new site here. 
-  SelectUSA seeks to highlight the many advantages the United States offers as a location for business and investment. 
-
-# ----------------------- #
-#    Jekyll & Plugins     #
-# ----------------------- #
-
-# Build settings
-markdown: kramdown
-permalink: pretty
-
+name: Website
+pygments: true
+markdown: rdiscount
+exclude:
+  - .bundle
+  - .git
+  - .gitignore
+  - bin
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+collections:
+- events
