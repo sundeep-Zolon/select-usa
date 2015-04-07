@@ -1,6 +1,6 @@
-name: Website
-highlighter: pygments
-baseurl: 
+name: Select-USA
+pygments: true
+markdown: rdiscount
 exclude:
   - .bundle
   - .git
@@ -10,6 +10,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-markdown: kramdown
 collections:
 - events
