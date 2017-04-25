@@ -1,6 +1,6 @@
 name: Select-USA
-pygments: true
-markdown: rdiscount
+hightlights: pygments
+# markdown: rdiscount
 exclude:
   - .bundle
   - .git
