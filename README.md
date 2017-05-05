@@ -1,6 +1,6 @@
 # SelectUSA
 
-This project includes the source code 
+This project includes the source code of SelectUSA
 
 View the site here: http://selectusa.commerce.gov/
 
